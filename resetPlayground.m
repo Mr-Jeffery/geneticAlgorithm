@@ -1,7 +1,5 @@
-global n;
-global miu;
-n = 200;%length of each sequence
-miu = 1000;%group size
+n = 30;%length of each sequence
+miu = 100;%group size
 k = 2;%inverse tournament size
 T = 1e4;
 % S0 = generator(n,1);
@@ -23,4 +21,3 @@ function Y = speciesGenerator(n,miu)
 % This function is used to generate miu binary sequences whose length is n.
 Y = logical(randi([0,1],miu,n));
 end
-
